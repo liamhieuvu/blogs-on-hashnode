@@ -248,6 +248,7 @@ Global state: {'Count': 1}
 ```
 
 Full code: https://github.com/hieutrgvu/algorand-first-contracts/blob/master/counter_contract.py
+
 Reference: https://developer.algorand.org/docs
 
 Thank you for reading my blog. Stay tune for the next parts.
