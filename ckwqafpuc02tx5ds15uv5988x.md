@@ -1,4 +1,4 @@
-## Becoming a Good Leader in COVID Time
+## Become a Good Leader in COVID Time
 
 During COVID time, people work remotely due to city lockdown, and this brings lots of problems for all business, especially startup companies. For that reason, we need team leaders to motivate team members and keep the job done efficiently. This blog will provide some management tips during the hard time for a leader. The presentation file can be found  [here](https://docs.google.com/presentation/d/1Tc6Qp-hBlUaKq8_AVkWgGK_1Fd7nZbSoHr5WWGPLfdg/edit?usp=sharing).
 
