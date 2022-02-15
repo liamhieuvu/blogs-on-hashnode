@@ -15,7 +15,7 @@ Assume that we are working on a token that can be minted and burned. We will nee
 
 # Smart contracts
 
-**Github**: https://github.com/hieutrgvu/centralized-bridge-contract.
+**Github**: https://github.com/liamhieuvu/centralized-bridge-contract.
 This project uses OpenZeppelin with Hardhat, and [here](https://docs.openzeppelin.com/learn)  is a good start if you are beginners.
 
 ## Token contracts
@@ -85,17 +85,17 @@ contract Bridge is Ownable {
     }
 }
 ```
-When deploy `Bridge` contract, we need to grant it permission to mint and burn ( [IMintableBurnableToken](https://github.com/hieutrgvu/centralized-bridge-contract/blob/master/contracts/IMintableBurnableToken.sol)) the token. The `transferTo` method is used for initializing bridge requests. It requires 3 params: `to` for receiver's address, `amount` for token amount, and `toChainID` for the destination network. The `mint` method is used for generating token to receivers. It requires `fromChainID`, and `fromChainTxn` to prevent double minting.
+When deploy `Bridge` contract, we need to grant it permission to mint and burn ( [IMintableBurnableToken](https://github.com/liamhieuvu/centralized-bridge-contract/blob/master/contracts/IMintableBurnableToken.sol)) the token. The `transferTo` method is used for initializing bridge requests. It requires 3 params: `to` for receiver's address, `amount` for token amount, and `toChainID` for the destination network. The `mint` method is used for generating token to receivers. It requires `fromChainID`, and `fromChainTxn` to prevent double minting.
 
 There is an important event - `Transfer`. Backend server will listen to this event and call `mint` method on the network having `toChainID` with the specific amount and receiver's address.
 
 # Backend server
-**Github**: https://github.com/hieutrgvu/centralized-bridge-be.
+**Github**: https://github.com/liamhieuvu/centralized-bridge-be.
 This project uses NodeJS with Loopback 3 framework. [Here](https://loopback.io/doc/en/lb3)  is the full document for learning Loopback 3.
 
 ![Untitled drawing (1) (2) (1).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1631132713982/DLJglr4kS.png)
 
-For each chain, there are 3 threads running simultaneously: `syncTx` for listening to `Transfer` events, `confirmTx` for preventing network fork, `processTx` for minting token on the other side of bridge. The following code blocks are the simplified. For the full version, visit [here](https://github.com/hieutrgvu/centralized-bridge-be/blob/master/common/models/transaction.js).
+For each chain, there are 3 threads running simultaneously: `syncTx` for listening to `Transfer` events, `confirmTx` for preventing network fork, `processTx` for minting token on the other side of bridge. The following code blocks are the simplified. For the full version, visit [here](https://github.com/liamhieuvu/centralized-bridge-be/blob/master/common/models/transaction.js).
 
 `syncTx` reads the last synced block from database to continue syncing from this block. This prevents missing events when the server is restarted or redeployed. Then, `syncTx` loads bridge contract with given ABI and address. Finally, it gets events with `getPastEvents` and save them to database in an infinity loop.
 ```js
@@ -189,7 +189,7 @@ Transaction.processTx = async function (cfg) {
 ## Deploy contracts
 Open shell `1`:
 ```shell
-git clone https://github.com/hieutrgvu/centralized-bridge-contract.git
+git clone https://github.com/liamhieuvu/centralized-bridge-contract.git
 cd centralized-bridge-contract
 npm install
 ```
@@ -203,7 +203,7 @@ After deploying, remember the addresses of token and bridge on 2 chains.
 ## Run backend server
 Open new shell `2`:
 ```shell
-git clone https://github.com/hieutrgvu/centralized-bridge-be.git
+git clone https://github.com/liamhieuvu/centralized-bridge-be.git
 cd centralized-bridge-be
 npm install
 ```
