@@ -140,7 +140,7 @@ Basically, `lsig_payment_txn` is just a normal payment transaction. The differen
 + Contract balance: https://testnet.algoexplorer.io/address/UORLHSSLWN3DZVBLBG55MEU5A65CEH2QUXD4UCQWKMSLCSQOU5MBJGAIPQ
 + Benefactor balance: https://testnet.algoexplorer.io/address/UFAGBH5BHBAKDSSSBKP6LAZ7VFIA3ETNK7LVNEH6KXRRNTYE6WYHTEMEGU
 
-Full code: https://github.com/hieutrgvu/algorand-first-contracts/blob/master/donation_smart_sig.py
+Full code: https://github.com/liamhieuvu/algorand-first-contracts/blob/master/donation_smart_sig.py
 
 Reference: https://developer.algorand.org/docs
 
