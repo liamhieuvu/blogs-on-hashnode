@@ -247,7 +247,7 @@ Application called
 Global state: {'Count': 1}
 ```
 
-Full code: https://github.com/hieutrgvu/algorand-first-contracts/blob/master/counter_contract.py
+Full code: https://github.com/liamhieuvu/algorand-first-contracts/blob/master/counter_contract.py
 
 Reference: https://developer.algorand.org/docs
 
