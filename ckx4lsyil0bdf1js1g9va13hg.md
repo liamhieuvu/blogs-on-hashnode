@@ -114,6 +114,6 @@ The about example will transfer 9 ALGO from my address to your address. Note tha
 
 Thank you for reading my blog. Stay tune for the next parts.
 
-Github: https://github.com/hieutrgvu/algorand-first-txns.git
+Github: https://github.com/liamhieuvu/algorand-first-txns.git
 
 References: https://developer.algorand.org/docs
