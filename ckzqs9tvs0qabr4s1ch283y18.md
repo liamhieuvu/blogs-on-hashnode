@@ -19,10 +19,12 @@ In software view, there are 4 main concepts when working with Kafka:
 ![4.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645082200069/UoON2UUkA.png)
 
 # Architecture
-Kafka ecosystem contains 1 or more brokers and ZooKeepers (may not required in later version). Brokers:
-+ Responsible for maintaining the published data
-+ Have zero or more partitions per topic
-+ Can be leader or follower of a partition. Followers are never read or write data, and they just make replicas for backups of a partition. In contrast, leader can read or write data.
+Kafka ecosystem contains 1 or more brokers and ZooKeepers (may not required in later versions).
+
+Brokers:
++ responsible for maintaining the published data
++ have zero or more partitions per topic
++ can be leader or follower of a partition. Followers are never read or write data, and they just make replicas for backups of a partition. In contrast, leader can read or write data.
 
 ZooKeeper holds metadata, e.g. available brokers, addresses and ports, which one is leader, etc. and is used for managing and coordinating Kafka broker. In later version, we may not need a ZooKeeper to run Kafka.
 
