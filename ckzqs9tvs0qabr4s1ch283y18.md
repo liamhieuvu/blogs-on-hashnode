@@ -32,11 +32,11 @@ ZooKeeper holds metadata, e.g. available brokers, addresses and ports, which one
 
 # Producers
 
-Producers writes data to topics within different partitions. Producers need bootstrap servers to get Kafka metadata, then they will know what data should be written to which partition and broker. Users does not require to specify the broker and the partition.
+Producers write data to topics within different partitions. Producers need bootstrap servers to get Kafka metadata, then they will know what data should be written to which partition and broker. Users does not require to specify the broker and the partition.
 
 Producers can use keys to send the messages in a specific order. Data with a key always be written into a partition, which message order is maintained strictly. Without keys, data will be distributed among partitions in round-robin manner, and this does not guarantee order when reading.
 
-Producers can control the process of Kafka response through ACK. They can wait for leader received the data (ACK=1) or both leader and followers received the data (ACK=2) or even not wait for anything (ACK=0).
+Producers can control the process of Kafka response through ACK. They can wait for leader received the data (ACK=1), or both leader and followers received the data (ACK=2), or even not wait for anything (ACK=0).
 
 ![6.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645082206252/tZQ2c1ZBaa.png)
 
@@ -46,7 +46,7 @@ Consumer can read data from a topic alone or be grouped with others to increase 
 
 ![7.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645082206596/q8e4GGMLf.png)
 
-There may be multiple consumer groups reading a topic. Each consumer group will have its own state, which means it will read from the point it left after shutdown/restart or rebalancing process. The state is the latest offset that data is processed. Consumer may commit its offset manually or Kafka can trigger automatically each interval (default: 5s). Manual commit can be done synchronously (wait successful responses from Kafka) or asynchronously (process next items and ignore response results). Depending on commit method, we can achieve some effects of delivery: no guarantee, at most once, at least once, and exactly once.
+There may be multiple consumer groups reading a topic. Each consumer group will have its own state, which means it will read from the point it left after shutdown/restart or rebalancing process. The state is the latest offset that data is processed. Consumer may commit its offset manually or Kafka can trigger automatically at each interval (default: 5s). Manual commit can be done synchronously (wait successful responses from Kafka) or asynchronously (process next items and ignore response results). Depending on commit method, we can achieve some effects of delivery: no guarantee, at most once, at least once, and exactly once.
 
 ![Screen Shot 2022-02-17 at 4.05.48 PM-min (1).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645089069861/YBUt4rInW.png)
 
