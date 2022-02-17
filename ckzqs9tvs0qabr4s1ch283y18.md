@@ -11,10 +11,10 @@ Apache Kafka is a distributed publish-subscribe messaging system, which passes m
 ![3.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645082199066/Ag2Glb9Rk.png)
 
 In software view, there are 4 main concepts when working with Kafka:
-+ **Producer**: Public messages to one or more Kafka topics. The messages will be appended only to the last position 
-+ **Consumer**: Subscribes to one or more topics and consume published messages
-+ **Topic**: A place that messages of a particular category are organized in
-+ **Partition**: A topic is logical place and divided into partitions, which is like a physical place
++ **Producer**: Public messages to one or more Kafka topics. The messages will be appended only to the last position.
++ **Consumer**: Subscribes to one or more topics and consume published messages.
++ **Topic**: A place that messages of a particular category are organized in.
++ **Partition**: A topic is a logical place and divided into partitions, which are like physical places to contain messages.
 
 ![4.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645082200069/UoON2UUkA.png)
 
