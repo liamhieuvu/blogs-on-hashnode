@@ -36,9 +36,9 @@ Producers write data to topics within different partitions. Producers need boots
 
 Producers can use keys to send the messages in a specific order. Data with a key always be written into a partition, which message order is maintained strictly. Without keys, data will be distributed among partitions in round-robin manner, and this does not guarantee order when reading.
 
-Producers can control the process of Kafka response through ACK. They can wait for leader received the data (ACK=1), or both leader and followers received the data (ACK=2), or even not wait for anything (ACK=0).
+Producers can control the process of Kafka response through ACK. They can wait for leader received the data (ACK=1), or both leader and followers received the data (ACK=all), or even not wait for anything (ACK=0).
 
-![6.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645082206252/tZQ2c1ZBaa.png)
+![6.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645153895583/TLZsyf3mT.png)
 
 # Consumers
 
