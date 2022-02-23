@@ -6,6 +6,7 @@ Algorand Starter series:
 + Part 1: Client side
 + **Part 2: Stateful contract (Smart contract)**
 + Part 3: Stateless contract (Smart signature)
++ Part 4: Test scripts
 
 ## Contract Architecture
 ### Model
