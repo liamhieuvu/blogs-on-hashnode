@@ -4,6 +4,7 @@ This is the first part of Algorand Starter series. Algorand is a new raising blo
 + **Part 1: Client side**
 + Part 2: Stateful contract (Smart contract)
 + Part 3: Stateless contract (Smart signature)
++ Part 4: Test scripts
 
 The content of the first part will includes algod, indexer and Golang SDK.
 ## Algod
