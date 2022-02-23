@@ -35,7 +35,7 @@ This section is focus only common operations on testnet, and contract write inte
 
 ![Screen Shot 2021-12-13 at 5.29.02 PM.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1639391364314/MJGqf4wi5.png)
 
-#### Instantiate Client
+#### Instantiate clients
 Algod:
 ```go
 const algodAddress = "https://testnet.algoexplorerapi.io"
@@ -49,7 +49,7 @@ const indexerToken = ""
 indexerClient, err := indexer.MakeClient(indexerAddress, indexerToken)
 ```
 
-#### Check Account Balance
+#### Check account balances
 ```go
 addr := "27GYZK5KAHA2A7URIBQ7ENGH3WQMKWKHQTOC4XUB56XFTNPWRMNI6A6HLY"
 _, accInfo, _ := indexerClient.LookupAccountByID(addr).Do(context.Background())
