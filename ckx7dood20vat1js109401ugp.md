@@ -41,7 +41,7 @@ A set of arrays can be passed with any application transaction, which instructs 
 
 On runtime, TEAL program will load necessary variables on its stack. The applications array, accounts array, and assets array are read-only, while global and local state are readable and writable. The program can also use temporary variables by requesting memory from scratch memory.
 
-## Pyteal example
+## Pyteal examples
 The following sample builds a simple counter smart contract that either adds or deducts one from a global counter based on how the contract is called.
 
 ### Setup development environment
@@ -56,7 +56,7 @@ git clone https://github.com/algorand/sandbox.git
 cd sandbox
 ./sandbox up testnet
 ```
-### Build contract
+### Build contracts
 First, we need to handle 5 types of transactions for approval program. In this example, we don't handle `OptIn`, `CloseOut` (does not require local storage from users); `UpdateApplication`, and `DeleteApplication`, so just return 0 for errors.
 
 ```python
