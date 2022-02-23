@@ -6,6 +6,7 @@ Algorand Starter series:
 + Part 1: Client side
 + Part 2: Stateful contract (Smart contract)
 + **Part 3: Stateless contract (Smart signature)**
++ Part 4: Test scripts
 
 ## Contract Account
 ![Screen Shot 2021-12-16 at 5.39.30 PM-min.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1639651209012/D3C2beCjy.png)
