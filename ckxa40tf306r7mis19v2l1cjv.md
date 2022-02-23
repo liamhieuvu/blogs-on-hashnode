@@ -8,7 +8,7 @@ Algorand Starter series:
 + **Part 3: Stateless contract (Smart signature)**
 + Part 4: Test scripts
 
-## Contract Account
+## Contract accounts
 ![Screen Shot 2021-12-16 at 5.39.30 PM-min.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1639651209012/D3C2beCjy.png)
 
 Each unique compiled smart signature program corresponds to a single Algorand address, output by goal clerk compile. To use a TEAL program as a contract account, just send Algos to its address to turn it into an account on Algorand with a balance:
@@ -20,8 +20,8 @@ Each unique compiled smart signature program corresponds to a single Algorand ad
 
 Smart signatures can also be used to delegate signature authority, which means that a private key can sign a TEAL program and the resulting output can be used as a signature in transactions on behalf of the account associated with the private key. The owner of the delegated account can share this logic signature, allowing anyone to spend funds from his or her account according to the logic within the TEAL program. For example, a mortgage company may provide logic to an account to remove a certain number of Algos from the account once a month. The user then signs this logic and once a month the mortgage company can submit a transaction from the signing account, but the transaction is signed by the smart signature and not the private key of the account. (Ref: [Algorand Doc](https://developer.algorand.org/docs/get-details/dapps/smart-contracts/smartsigs/modes/#delegated-approval))
 
-## Example
-Let's get hand dirty with contract account example below. It is a donation program, which anyone can send the fund to an address, and only a benefactor can claim the fund.
+## Examples
+Let's get hand dirty with the contract account example below. It is a donation program, which anyone can send the fund to an address, and only a benefactor can claim the fund.
 
 ```python
 def donation_escrow(benefactor):
