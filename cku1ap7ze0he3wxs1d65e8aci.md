@@ -1,4 +1,4 @@
-## Basic Tips to Make Good Slides for Engineers
+## Tips to Make Good Slides for Engineers
 
 Most of engineers I met are introverts. They tend to focus only on their tasks, e.g. coding, designing, etc. There is a fact that it is difficult for them to express or present their ideas, and making slides is more important if they want to become leaders. To have good slides, we need 2 things: content and visualization. This post will give some tips, and help you visualize better.
 
