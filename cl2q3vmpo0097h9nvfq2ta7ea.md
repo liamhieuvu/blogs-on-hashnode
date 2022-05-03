@@ -104,6 +104,12 @@ func main() {
 
 # Check results
 
+Run the app
+
+```bash
+go run main.go
+```
+
 Create a short link:
 
 ```bash
