@@ -1,4 +1,4 @@
-## URL shortener with Golang and MySQL
+## URL Shortener with Golang and MySQL
 
 This blog will introduce a simple but effective way to make a URL shortener like bitly.com or tinyurl.com. We can have short links in our domain for brand recognization and traffic tracking. Let's go.
 
