@@ -38,7 +38,7 @@ Finally, `event` service will store data into database or stream it to Google Cl
 
 # 4. Examples
 
-Because we own data, we can using SQL queries to get any insights we want, including ad-hoc queries. For example, the marketing department asks for the number of users registered to purchase cameras within 1 day after Facebook posts. Moreover, we can build custom dashboards with custom filters too. We can know exactly which section, e.g. home page, recommendation popup, or similar products, that makes users purchase.
+Because we own data, we can use SQL queries to get any insights we want, including ad-hoc queries. For example, the marketing department asks for the number of users registered to purchase cameras within 1 day after Facebook posts. Moreover, we can build custom dashboards with custom filters too. We can know exactly which section, e.g. home page, recommendation popup, or similar products, that makes users purchase.
 
 ![Screen Shot 2022-07-12 at 3.31.45 PM-min.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1657614920378/NtYLpDKgq.png align="left")
 
