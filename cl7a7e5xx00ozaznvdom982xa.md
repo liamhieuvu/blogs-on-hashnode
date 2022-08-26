@@ -2,6 +2,8 @@
 
 Friendly messages should be shown to users if any errors occur. We can achieve this at frontend level. But, maintaining error codes with their meaning is tedious, and backend system may mismatch with frontend. In this blog, I will show the way backend translates errors into multiple languages. This way can remove mismatch between backend and frontend and enable flexibility for adding info into translated messages.
 
+Full code can be found at: https://github.com/liamhieuvu/go-multi-lang-errors
+
 # Build a simple server
 
 Imagine that we are building an API to create a user with some fields, and these fields should be validated by backend. We will use [gin](https://github.com/gin-gonic/gin) framework to build a server to handle user creation requests.
