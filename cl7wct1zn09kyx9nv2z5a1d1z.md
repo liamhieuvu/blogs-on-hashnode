@@ -16,7 +16,7 @@ touch prod.yml
 
 + `docker-compose.yml`
 
-We will create 2 containers running WordPress and MariaDB to store data. Note that we use 2 volumes for each container. This makes data persistent for backup and restore processes.
+We will create 2 containers running WordPress and MariaDB to store data. Note that we use 2 volumes for each container. This makes data persistent for backup and restoration processes.
 
 ```yml
 services:
