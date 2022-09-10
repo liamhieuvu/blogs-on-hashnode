@@ -191,6 +191,7 @@ docker exec -it prod-wordpress-1 bash
 apt update
 apt install mariadb-client -y
 mariadb -h db -u root -psomewordpress wordpress < backup.sql
+exit
 ```
 
 + Access to http://localhost:8001/ and check the old posts are restored
