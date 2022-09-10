@@ -87,7 +87,7 @@ docker ps --format "table {{.Image}}\t{{.Ports}}\t{{.Names}}"
 # mariadb:10.6.4-focal   3306/tcp, 33060/tcp    dev-db-1
 ```
 
-# Setup WP and create a post
+# Setup and create a post
 
 + Access to http://localhost:8000/ and setup admin user
 
@@ -101,7 +101,7 @@ docker ps --format "table {{.Image}}\t{{.Ports}}\t{{.Names}}"
 
 + Access to http://localhost:8000/ again to see the post
 
-# Backup WP
+# Backup
 
 The 2 most important things to back up: **content of posts** and **uploaded files**. The posts, configs, users info, etc. are stored in database, so we will dump all data to a `sql` file. And, the uploaded files located in `$WP_ROOT/wp-content/uploads`, so we will copy this directory to a safe place.
 
@@ -150,7 +150,7 @@ tree uploads
 #         └── ...
 ```
 
-# Restore WP
+# Restore
 
 Someday, unrecoverable errors happen, and we have to create a new WordPress with backup data. Start prod WordPress, which is a brand new one running at port 8001.
 
