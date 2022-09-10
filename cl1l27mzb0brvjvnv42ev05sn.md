@@ -1,4 +1,4 @@
-## Easy path from traditional to blockchain dev
+## Easy Path from Traditional to Blockchain Dev
 
 The whole world pays lots of attention to blockchain recently. If you are frontend or backend developers, how to work in the blockchain field without starting like a fresher? I made a change from traditional systems to the blockchain world in a hard way, but you don't need to do that path. I write this blog to share an easier way for anyone who needs it.
 
