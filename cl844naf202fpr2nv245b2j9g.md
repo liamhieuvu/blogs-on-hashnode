@@ -1,5 +1,6 @@
 ## Rust Crash Course
 
+Rust is a multi-paradigm, general-purpose programming language, and it is used widely in recent years, especially in the blockchain world. Polkadot and Near smart contracts use Rust. Subgraph will Rust to build a server indexing data from blockchains. It is reasonable to explore Rust features.
 Slides: https://docs.google.com/presentation/d/1H7mXnoaZRTwLYxGTtVyNl0G04dPhEpTjUw__hlhtDN0
 
 # Cargo
