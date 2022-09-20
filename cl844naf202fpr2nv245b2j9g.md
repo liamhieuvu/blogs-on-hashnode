@@ -84,7 +84,7 @@ After declaring `vector`, we make an assignment `let own_v = vector`. Because `V
 
 # Structs
 
-In Rust, there are 3 types of struct: named field, tuple-like, unit-like. Named field structs are like other languages. Tuple structs are useful to specify tuple type and remove too verbose field names. And, unit structs are useful to implement traits but not requiring data.
+In Rust, there are 3 types of struct: named field, tuple-like, unit-like. Named field structs are like other languages. Tuple structs are useful to specify tuple type and remove too verbose field names. And, unit structs are useful to implement traits but not requiring data. Not that functions not requiring an object to call are associated functions, and they can be used as constructors.
 
 ![structs.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1663304615662/VXIJ47DFz.png align="left")
 
@@ -92,7 +92,7 @@ In Rust, there are 3 types of struct: named field, tuple-like, unit-like. Named 
 
 Traits in Rust are like interfaces in other languages. We can specify placeholder functions in traits or even define default implementation for them. To implement traits for struct, use `impl {trait} for {struct}`. We can override default implementation too.
 
-Derive macros is the code that generate Rust code. Rust exports some useful traits and its implementation for us, e.g. `Copy`, `Clone`, `Debug, etc.
+Derive macros is the code that generate Rust code. Rust exports some useful traits and its implementation for us, e.g. `Copy`, `Clone`, `Debug, etc. With `Copy` implementation, struct assignments are not moved to the new owner anymore. However, the `Copy` trait can be applied only for structs with all fields implementing `Copy`.
 
 ![traits-and-derive.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1663304658937/ee6U_EZ1j.png align="left")
 
