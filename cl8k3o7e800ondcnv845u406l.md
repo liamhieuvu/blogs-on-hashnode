@@ -79,7 +79,7 @@ We can run this script whenever we want, and it cleans up Docker only if the dis
 # [09-27-2022 09:38:19] Current disk usage: 15%
 ```
 
-# Setup crontab for automated cleaning
+# Automate with crontab
 
 We will setup crontab to run `~/clean-docker.sh` every minutes first. This help us checking the result quickly. Open crontab config:
 
