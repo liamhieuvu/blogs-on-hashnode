@@ -1,6 +1,6 @@
 # Understand Crypto Keys in Wallet
 
-We will explore how a crypto wallet works in general, and find out if our money are truly safe. Did you hear about mnemonic, derivation paths, private and public Key? 
+We will explore how a crypto wallet works in general and find out if our money is truly safe. Did you hear about mnemonic, derivation paths, private and public keys? 
 
 # Crypto wallet components
 
