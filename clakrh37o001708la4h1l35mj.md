@@ -29,7 +29,7 @@ On GMX, we can trade in spot and perpetual markets. Each type also has limit and
 
 For price contracts, `Vault` only need to interact with `VaultPriceContract` which aggregates prices from multiple sources: Chainlink, on-chain AMM pools, predefined stable tokens ($1), and `FastPriceFeed` contract. Be careful, GMX can control the price when updating `FastPriceFeed`.
 
-# Perpetual use case example
+# Perpetual use case examples
 
 ## Long positions
 
